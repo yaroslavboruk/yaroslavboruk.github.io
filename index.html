@@ -1,0 +1,1673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Yaroslav Boruk — Music Industry Professional</title>
+    <meta name="description"
+        content="Yaroslav Boruk — Independent music producer, sound engineer, and event manager. 3+ years of international operations. Available for remote contracts." />
+    <link rel="me" href="https://man1k.xyz" />
+    <link rel="me" href="https://www.linkedin.com/in/borukyaroslav" />
+    <link rel="canonical" href="https://yaroslavboruk.github.io" />
+    <meta property="og:title" content="Yaroslav Boruk — Music Industry Professional" />
+    <meta property="og:description"
+        content="Independent music professional. 3+ years across Ukraine, Japan, and Spain. Available for remote B2B contracts in EMEA." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yaroslavboruk.github.io" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Yaroslav Boruk — Music Industry Professional" />
+    <meta name="twitter:description"
+        content="Independent music professional. 3+ years across Ukraine, Japan, and Spain. Available for remote B2B contracts in EMEA." />
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+
+        :root {
+            --bg: #0b0b0b;
+            --bg2: #111;
+            --border: #1f1f1f;
+            --border2: #2a2a2a;
+            --text: #a0a0a0;
+            --text2: #555;
+            --white: #ededed;
+            --green: #3dbe73;
+            --ff: Arial, Helvetica, sans-serif;
+        }
+
+        html {
+            -webkit-text-size-adjust: 100%
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--ff);
+            font-size: 13px;
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+            cursor: none
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none
+        }
+
+        ::selection {
+            background: rgba(255, 255, 255, .07)
+        }
+
+        .wrap {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 0 28px
+        }
+
+        #cur {
+            position: fixed;
+            width: 8px;
+            height: 8px;
+            background: var(--white);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999;
+            transform: translate(-50%, -50%);
+            transition: width .2s, height .2s, opacity .2s, background .2s;
+            will-change: transform
+        }
+
+        #cur-trail {
+            position: fixed;
+            width: 32px;
+            height: 32px;
+            border: 1px solid rgba(255, 255, 255, .18);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9998;
+            transform: translate(-50%, -50%);
+            transition: width .3s, height .3s, border-color .3s;
+            will-change: transform
+        }
+
+        body:not(.cursor-ready) #cur,
+        body:not(.cursor-ready) #cur-trail {
+            opacity: 0
+        }
+
+        body.cursor-hover #cur {
+            width: 4px;
+            height: 4px;
+            background: var(--green)
+        }
+
+        body.cursor-hover #cur-trail {
+            width: 44px;
+            height: 44px;
+            border-color: rgba(61, 190, 115, .3)
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            border-bottom: 1px solid transparent;
+            transition: background .4s, border-color .4s, backdrop-filter .4s
+        }
+
+        nav.stuck {
+            background: rgba(11, 11, 11, .95);
+            backdrop-filter: blur(16px);
+            border-color: var(--border)
+        }
+
+        nav .wrap {
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between
+        }
+
+        .nav-name {
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: .03em;
+            color: var(--white);
+            opacity: 0
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+            list-style: none
+        }
+
+        .nav-links a {
+            font-size: 11px;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            color: var(--text2);
+            transition: color .25s;
+            opacity: 0;
+            position: relative
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--white);
+            transition: width .25s
+        }
+
+        .nav-links a:hover {
+            color: var(--white)
+        }
+
+        .nav-links a:hover::after {
+            width: 100%
+        }
+
+        .nav-links a.active {
+            color: var(--text)
+        }
+
+        #hero {
+            padding: 130px 0 88px;
+            border-bottom: 1px solid var(--border);
+            position: relative;
+            overflow: hidden
+        }
+
+        .hero-grid-bg {
+            position: absolute;
+            inset: 0;
+            background-image: linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px);
+            background-size: 80px 80px;
+            opacity: .3;
+            mask-image: radial-gradient(ellipse 70% 80% at 100% 50%, black, transparent)
+        }
+
+        .hero-status {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            font-size: 11px;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            color: var(--green);
+            margin-bottom: 20px;
+            opacity: 0
+        }
+
+        .dot {
+            width: 6px;
+            height: 6px;
+            background: var(--green);
+            border-radius: 50%;
+            animation: blink 2.4s infinite
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1
+            }
+
+            50% {
+                opacity: .15
+            }
+        }
+
+        .hero-name {
+            font-size: clamp(36px, 6.5vw, 68px);
+            font-weight: 700;
+            color: var(--white);
+            letter-spacing: -.025em;
+            line-height: 1;
+            margin-bottom: 10px
+        }
+
+        .hero-name .clip {
+            overflow: hidden;
+            display: block
+        }
+
+        .hero-name .clip span {
+            display: block;
+            transform: translateY(110%)
+        }
+
+        .hero-name .sub {
+            display: block;
+            font-size: .46em;
+            font-weight: 400;
+            color: var(--text2);
+            letter-spacing: .01em;
+            margin-top: 12px;
+            overflow: hidden
+        }
+
+        .hero-name .sub span {
+            display: block;
+            transform: translateY(110%)
+        }
+
+        .hero-summary {
+            max-width: 540px;
+            color: var(--text2);
+            line-height: 1.85;
+            margin: 24px 0 36px;
+            font-size: 13px;
+            opacity: 0
+        }
+
+        .hero-summary strong {
+            color: var(--text);
+            font-weight: 400
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            opacity: 0
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 9px 18px;
+            font-family: var(--ff);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+            border: 1px solid transparent;
+            transition: all .25s;
+            position: relative;
+            overflow: hidden;
+            cursor: none
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(255, 255, 255, .04);
+            transform: translateX(-100%);
+            transition: transform .3s
+        }
+
+        .btn:hover::before {
+            transform: translateX(0)
+        }
+
+        .btn-solid {
+            background: var(--white);
+            color: #0b0b0b;
+            border-color: var(--white)
+        }
+
+        .btn-solid:hover {
+            background: #d4d4d4;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, .4)
+        }
+
+        .btn-outline {
+            border-color: var(--border2);
+            color: var(--text2)
+        }
+
+        .btn-outline:hover {
+            border-color: #4a4a4a;
+            color: var(--white);
+            transform: translateY(-2px)
+        }
+
+        section {
+            padding: 68px 0;
+            border-bottom: 1px solid var(--border)
+        }
+
+        section:last-of-type {
+            border-bottom: none
+        }
+
+        .sec-label {
+            font-size: 10px;
+            letter-spacing: .18em;
+            text-transform: uppercase;
+            color: var(--text2);
+            margin-bottom: 32px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border)
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1px;
+            background: var(--border)
+        }
+
+        .stat {
+            background: var(--bg);
+            padding: 22px 20px;
+            transition: background .25s;
+            position: relative;
+            overflow: hidden
+        }
+
+        .stat::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--white);
+            transition: width .4s
+        }
+
+        .stat:hover {
+            background: var(--bg2)
+        }
+
+        .stat:hover::after {
+            width: 100%
+        }
+
+        .stat-n {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--white);
+            letter-spacing: -.02em;
+            line-height: 1;
+            margin-bottom: 5px
+        }
+
+        .stat-l {
+            font-size: 10px;
+            letter-spacing: .09em;
+            text-transform: uppercase;
+            color: var(--text2)
+        }
+
+        .about-text {
+            max-width: 660px;
+            color: var(--text2);
+            line-height: 1.9;
+            font-size: 13px
+        }
+
+        .about-text p {
+            margin-bottom: 14px
+        }
+
+        .about-text p:last-child {
+            margin-bottom: 0
+        }
+
+        .about-text strong {
+            color: var(--text);
+            font-weight: 400
+        }
+
+        .exp-item {
+            display: grid;
+            grid-template-columns: 155px 1fr;
+            gap: 28px;
+            padding: 26px 0;
+            border-bottom: 1px solid var(--border);
+            position: relative;
+            transition: padding-left .3s cubic-bezier(.16, 1, .3, 1)
+        }
+
+        .exp-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--white);
+            transform: scaleY(0);
+            transform-origin: top;
+            transition: transform .4s cubic-bezier(.16, 1, .3, 1)
+        }
+
+        .exp-item:first-of-type {
+            border-top: 1px solid var(--border)
+        }
+
+        .exp-item:hover {
+            padding-left: 14px
+        }
+
+        .exp-item:hover::before {
+            transform: scaleY(1)
+        }
+
+        .exp-period {
+            font-size: 11px;
+            color: var(--text2);
+            margin-bottom: 4px
+        }
+
+        .exp-org {
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+            color: var(--text2)
+        }
+
+        .exp-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 8px;
+            letter-spacing: -.01em
+        }
+
+        .exp-desc {
+            color: var(--text2);
+            line-height: 1.8;
+            font-size: 12px
+        }
+
+        .exp-desc ul {
+            padding-left: 14px;
+            margin-top: 6px
+        }
+
+        .exp-desc li {
+            margin-bottom: 5px
+        }
+
+        .project-block {
+            background: var(--bg2);
+            border: 1px solid var(--border2);
+            padding: 36px 40px;
+            display: grid;
+            grid-template-columns: 1fr 190px;
+            gap: 36px;
+            align-items: start;
+            position: relative;
+            overflow: hidden;
+            transition: border-color .3s, transform .3s
+        }
+
+        .project-block::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .15), transparent);
+            transition: left .6s
+        }
+
+        .project-block:hover {
+            border-color: #333;
+            transform: translateY(-2px)
+        }
+
+        .project-block:hover::before {
+            left: 100%
+        }
+
+        .project-kicker {
+            font-size: 10px;
+            letter-spacing: .16em;
+            text-transform: uppercase;
+            color: var(--text2);
+            margin-bottom: 10px
+        }
+
+        .project-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--white);
+            letter-spacing: -.03em;
+            margin-bottom: 4px
+        }
+
+        .project-sub {
+            font-size: 11px;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+            color: var(--text2);
+            margin-bottom: 16px
+        }
+
+        .project-desc {
+            color: var(--text2);
+            font-size: 12px;
+            line-height: 1.85;
+            margin-bottom: 18px
+        }
+
+        .project-note {
+            font-size: 11px;
+            color: var(--text2)
+        }
+
+        .project-note a {
+            color: var(--text);
+            transition: color .2s
+        }
+
+        .project-note a:hover {
+            color: var(--white)
+        }
+
+        .project-links {
+            display: flex;
+            flex-direction: column;
+            gap: 8px
+        }
+
+        .proj-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 13px;
+            border: 1px solid var(--border2);
+            font-size: 11px;
+            color: var(--text2);
+            letter-spacing: .06em;
+            text-transform: uppercase;
+            transition: all .22s;
+            position: relative;
+            overflow: hidden
+        }
+
+        .proj-link::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(255, 255, 255, .03);
+            transform: translateX(-100%);
+            transition: transform .25s
+        }
+
+        .proj-link:hover::before {
+            transform: translateX(0)
+        }
+
+        .proj-link:hover {
+            border-color: #4a4a4a;
+            color: var(--white)
+        }
+
+        .proj-link span {
+            font-size: 13px;
+            opacity: .4;
+            transition: transform .2s
+        }
+
+        .proj-link:hover span {
+            transform: translate(2px, -2px);
+            opacity: .8
+        }
+
+        .event-cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1px;
+            background: var(--border)
+        }
+
+        .event-card {
+            background: var(--bg);
+            padding: 32px 28px;
+            transition: background .25s;
+            position: relative;
+            overflow: hidden
+        }
+
+        .event-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--white);
+            transition: width .4s
+        }
+
+        .event-card:hover {
+            background: var(--bg2)
+        }
+
+        .event-card:hover::after {
+            width: 100%
+        }
+
+        .event-kicker {
+            font-size: 9px;
+            letter-spacing: .16em;
+            text-transform: uppercase;
+            color: var(--text2);
+            margin-bottom: 10px
+        }
+
+        .event-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--white);
+            letter-spacing: -.02em;
+            margin-bottom: 3px
+        }
+
+        .event-venue {
+            font-size: 10px;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            color: var(--text2);
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border)
+        }
+
+        .event-desc {
+            color: var(--text2);
+            font-size: 12px;
+            line-height: 1.8;
+            margin-bottom: 16px
+        }
+
+        .event-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px
+        }
+
+        .event-tag {
+            font-size: 9px;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            color: var(--text2);
+            border: 1px solid var(--border2);
+            padding: 3px 8px
+        }
+
+        .event-note {
+            margin-top: 16px;
+            padding-top: 14px;
+            border-top: 1px solid var(--border);
+            font-size: 10px;
+            letter-spacing: .05em;
+            color: var(--text2);
+            font-style: italic
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1px;
+            background: var(--border)
+        }
+
+        .skill-col {
+            background: var(--bg);
+            padding: 26px 22px;
+            transition: background .25s
+        }
+
+        .skill-col:hover {
+            background: var(--bg2)
+        }
+
+        .skill-col-title {
+            font-size: 10px;
+            letter-spacing: .14em;
+            text-transform: uppercase;
+            color: var(--text2);
+            margin-bottom: 14px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border)
+        }
+
+        .skill-col ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 7px
+        }
+
+        .skill-col li {
+            font-size: 12px;
+            color: var(--text2);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: color .2s, transform .2s
+        }
+
+        .skill-col:hover li {
+            color: var(--text)
+        }
+
+        .skill-col li:hover {
+            transform: translateX(4px);
+            color: var(--white)
+        }
+
+        .skill-col li::before {
+            content: '';
+            width: 3px;
+            height: 3px;
+            background: var(--border2);
+            border-radius: 50%;
+            flex-shrink: 0;
+            transition: background .2s
+        }
+
+        .skill-col li:hover::before {
+            background: var(--white)
+        }
+
+        .certs-list {
+            display: flex;
+            flex-direction: column
+        }
+
+        .cert-item {
+            display: grid;
+            grid-template-columns: 1fr auto auto;
+            align-items: center;
+            gap: 20px;
+            padding: 16px 0;
+            border-bottom: 1px solid var(--border);
+            transition: padding-left .25s
+        }
+
+        .cert-item:first-child {
+            border-top: 1px solid var(--border)
+        }
+
+        .cert-item:hover {
+            padding-left: 8px
+        }
+
+        .cert-name {
+            font-size: 13px;
+            color: var(--white);
+            margin-bottom: 2px
+        }
+
+        .cert-issuer {
+            font-size: 11px;
+            color: var(--text2)
+        }
+
+        .cert-date {
+            font-size: 11px;
+            color: var(--text2);
+            white-space: nowrap
+        }
+
+        .cert-link {
+            font-size: 10px;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            color: var(--text2);
+            border: 1px solid var(--border2);
+            padding: 5px 10px;
+            transition: all .2s;
+            white-space: nowrap;
+            cursor: none
+        }
+
+        .cert-link:hover {
+            border-color: #4a4a4a;
+            color: var(--white)
+        }
+
+        .creds-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1px;
+            background: var(--border)
+        }
+
+        .cred {
+            background: var(--bg);
+            padding: 16px 20px;
+            transition: background .22s;
+            position: relative;
+            overflow: hidden
+        }
+
+        .cred::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: rgba(255, 255, 255, .1);
+            transition: width .35s
+        }
+
+        .cred:hover {
+            background: var(--bg2)
+        }
+
+        .cred:hover::after {
+            width: 100%
+        }
+
+        .cred-l {
+            font-size: 9px;
+            letter-spacing: .14em;
+            text-transform: uppercase;
+            color: var(--text2);
+            margin-bottom: 3px
+        }
+
+        .cred-v {
+            font-size: 12px;
+            color: var(--text)
+        }
+
+        .lang-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1px;
+            background: var(--border)
+        }
+
+        .lang-item {
+            background: var(--bg);
+            padding: 20px 22px;
+            transition: background .22s
+        }
+
+        .lang-item:hover {
+            background: var(--bg2)
+        }
+
+        .lang-name {
+            font-size: 14px;
+            color: var(--white);
+            font-weight: 700;
+            margin-bottom: 3px
+        }
+
+        .lang-level {
+            font-size: 11px;
+            color: var(--text2);
+            margin-bottom: 4px
+        }
+
+        .lang-cert {
+            font-size: 10px;
+            color: var(--text2);
+            opacity: .6
+        }
+
+        #contact {
+            padding-bottom: 100px
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 56px
+        }
+
+        .contact-intro {
+            font-size: 19px;
+            font-weight: 700;
+            color: var(--white);
+            letter-spacing: -.01em;
+            line-height: 1.4;
+            margin-bottom: 12px
+        }
+
+        .contact-note {
+            font-size: 12px;
+            color: var(--text2);
+            line-height: 1.85;
+            margin-bottom: 24px
+        }
+
+        .contact-sep {
+            padding: 14px 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 24px;
+            font-size: 11px;
+            color: var(--text2);
+            line-height: 1.75
+        }
+
+        .contact-sep a {
+            color: var(--text);
+            transition: color .2s
+        }
+
+        .contact-sep a:hover {
+            color: var(--white)
+        }
+
+        .contact-rows {
+            display: flex;
+            flex-direction: column
+        }
+
+        .contact-row {
+            display: flex;
+            flex-direction: column;
+            padding: 14px 0;
+            border-bottom: 1px solid var(--border);
+            transition: padding-left .22s
+        }
+
+        .contact-row:first-child {
+            border-top: 1px solid var(--border)
+        }
+
+        .contact-row:hover {
+            padding-left: 8px
+        }
+
+        .cr-label {
+            font-size: 9px;
+            letter-spacing: .14em;
+            text-transform: uppercase;
+            color: var(--text2);
+            margin-bottom: 2px
+        }
+
+        .cr-val {
+            font-size: 13px;
+            color: var(--text);
+            transition: color .2s
+        }
+
+        .contact-row:hover .cr-val {
+            color: var(--white)
+        }
+
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 22px 0
+        }
+
+        footer .wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between
+        }
+
+        .footer-l {
+            font-size: 11px;
+            color: var(--text2)
+        }
+
+        .footer-r {
+            font-size: 10px;
+            color: var(--text2);
+            opacity: .4;
+            letter-spacing: .06em
+        }
+
+        .r {
+            opacity: 0;
+            transform: translateY(22px);
+            transition: opacity .65s cubic-bezier(.16, 1, .3, 1), transform .65s cubic-bezier(.16, 1, .3, 1)
+        }
+
+        .r.on {
+            opacity: 1;
+            transform: none
+        }
+
+        @media(max-width:768px) {
+            body {
+                cursor: auto
+            }
+
+            #cur,
+            #cur-trail {
+                display: none
+            }
+
+            .wrap {
+                padding: 0 18px
+            }
+
+            nav .wrap {
+                height: 48px
+            }
+
+            .nav-links {
+                display: none
+            }
+
+            #hero {
+                padding: 96px 0 60px
+            }
+
+            .hero-name {
+                font-size: clamp(32px, 9vw, 48px)
+            }
+
+            .hero-name .sub {
+                font-size: .48em
+            }
+
+            .hero-summary {
+                font-size: 13px;
+                margin: 18px 0 28px
+            }
+
+            .hero-actions {
+                gap: 6px
+            }
+
+            .btn {
+                padding: 8px 14px;
+                font-size: 10px
+            }
+
+            section {
+                padding: 52px 0
+            }
+
+            .stats {
+                grid-template-columns: 1fr 1fr
+            }
+
+            .exp-item {
+                grid-template-columns: 1fr;
+                gap: 6px
+            }
+
+            .exp-item:hover {
+                padding-left: 0
+            }
+
+            .exp-item::before {
+                display: none
+            }
+
+            .project-block {
+                grid-template-columns: 1fr;
+                padding: 24px 20px
+            }
+
+            .event-cards {
+                grid-template-columns: 1fr
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr
+            }
+
+            .creds-grid {
+                grid-template-columns: 1fr
+            }
+
+            .lang-grid {
+                grid-template-columns: 1fr
+            }
+
+            .cert-item {
+                grid-template-columns: 1fr;
+                gap: 8px
+            }
+
+            .cert-date {
+                display: none
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 36px
+            }
+
+            .project-links {
+                flex-direction: row;
+                flex-wrap: wrap
+            }
+
+            .proj-link {
+                flex: 1;
+                min-width: 120px
+            }
+        }
+
+        @media(max-width:400px) {
+            .hero-name {
+                font-size: 28px
+            }
+
+            .stats {
+                grid-template-columns: 1fr 1fr
+            }
+
+            .stat-n {
+                font-size: 22px
+            }
+        }
+
+        @media(prefers-reduced-motion:reduce) {
+
+            *,
+            *::before,
+            *::after {
+                animation-duration: .01ms !important;
+                transition-duration: .01ms !important
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="cur"></div>
+    <div id="cur-trail"></div>
+
+    <nav id="nav">
+        <div class="wrap">
+            <div class="nav-name" id="nav-name">Yaroslav Boruk</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#credentials">Credentials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="hero-grid-bg"></div>
+        <div class="wrap" style="position:relative;z-index:1">
+            <div class="hero-status" id="hero-status"><span class="dot"></span>Available for remote contracts · EMEA
+            </div>
+            <div class="hero-name">
+                <span class="clip"><span id="hero-h1">Yaroslav Boruk</span></span>
+                <span class="sub"><span id="hero-sub">Music Industry Professional</span></span>
+            </div>
+            <p class="hero-summary" id="hero-summary">
+                Independent music professional with <strong>3+ years of end-to-end operations</strong> across
+                production, live events, and industry infrastructure — spanning Ukraine, Japan, and Spain. Founder of
+                the Ukrainian Witch House Movement. Based in Europe, available for remote B2B contracts in EMEA.
+            </p>
+            <div class="hero-actions" id="hero-actions">
+                <a href="mailto:yaroslavboruk22@gmail.com" class="btn btn-solid mag">Get in touch</a>
+                <a href="https://www.linkedin.com/in/borukyaroslav" target="_blank" rel="noopener me"
+                    class="btn btn-outline mag">LinkedIn</a>
+                <a href="https://soundbetter.com/profiles/583629-yaroslav-boruk" target="_blank" rel="noopener"
+                    class="btn btn-outline mag">SoundBetter</a>
+                <a href="mailto:yaroslavboruk22@gmail.com?subject=CV%20Request" class="btn btn-outline mag">CV on
+                    request</a>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding:50px 0">
+        <div class="wrap">
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-n" data-val="10">0</div>
+                    <div class="stat-l">Events produced</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-n" data-val="3">0</div>
+                    <div class="stat-l">Countries</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-n" data-val="40">0</div>
+                    <div class="stat-l">Radio rotations</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-n" data-val="50">0</div>
+                    <div class="stat-l">Playlist placements</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="wrap">
+            <div class="sec-label r">About</div>
+            <div class="about-text r">
+                <p>I work at the intersection of <strong>music production, audio engineering, and live event
+                        management</strong> — disciplines developed and applied in parallel across international markets
+                    since 2023. Every system built from scratch, every process owned end-to-end.</p>
+                <p>On the audio side: full pipeline from composition and sound design through mixing, mastering, and
+                    distribution. On the events side: 10+ productions across three countries — venue acquisition, artist
+                    contracting, technical coordination, digital and offline marketing, and financial oversight. Both
+                    disciplines inform each other.</p>
+                <p>I value precision, long-term thinking, and conceptual integrity. Autonomous by default,
+                    ownership-oriented, and drawn to work with genuine artistic or cultural stakes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="project">
+        <div class="wrap">
+            <div class="sec-label r">Artist Project</div>
+            <div class="project-block r">
+                <div>
+                    <div class="project-kicker">Independent Artist Project · Est. Feb 2023</div>
+                    <div class="project-title">MAN1K</div>
+                    <div class="project-sub">Witch House · Dark Electronic · Ukraine</div>
+                    <p class="project-desc">Dark electronic producer and DJ — three years, three countries, one fully
+                        independent operation conceived and built from scratch. The project spans music production,
+                        release strategy, distribution, live booking, brand architecture, and digital infrastructure.
+                    </p>
+                    <div class="project-note">Bookings, press &amp; licensing — <a
+                            href="https://man1k.xyz/press">man1k.xyz/press</a></div>
+                </div>
+                <div class="project-links">
+                    <a href="https://man1k.xyz" target="_blank" rel="noopener me" class="proj-link">man1k.xyz
+                        <span>↗</span></a>
+                    <a href="https://man1k.xyz/press" target="_blank" rel="noopener" class="proj-link">EPK / Press
+                        <span>↗</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="events">
+        <div class="wrap">
+            <div class="sec-label r">Selected Events</div>
+            <div class="event-cards r">
+                <div class="event-card">
+                    <div class="event-kicker">Tokyo · Jul 25, 2025</div>
+                    <div class="event-title">CHERN</div>
+                    <div class="event-venue">HVEN · Cap 300</div>
+                    <p class="event-desc">High-production underground electronic event at one of Tokyo's most respected
+                        club spaces. International cast of 8 artists from Ukraine, Russia, Belarus, and Japan —
+                        coordinated across four countries, two continents. Full lifecycle management: venue contracting,
+                        visa and logistics support, technical riders, targeted digital campaigns, media partnerships,
+                        and on-site direction. Combined operational team of 16.</p>
+                    <div class="event-tags">
+                        <span class="event-tag">International Booking</span>
+                        <span class="event-tag">4 Countries</span>
+                        <span class="event-tag">Tokyo</span>
+                    </div>
+                    <div class="event-note">Cited in the Japanese Wikipedia article on witch house as a notable genre
+                        event.</div>
+                </div>
+                <div class="event-card">
+                    <div class="event-kicker">Osaka · Aug 1, 2025</div>
+                    <div class="event-title">TETRØ TERRØR</div>
+                    <div class="event-venue">Socore Factory · Cap 250</div>
+                    <p class="event-desc">Underground electronic event focused on the Japanese domestic scene — a
+                        deliberate counterpoint to CHERN in scale and character, produced within the same operational
+                        cycle. Lean structure, local lineup, full management: venue sourcing, artist selection,
+                        technical production, poster and flyer distribution in targeted areas, and floor coordination.
+                        Demonstrates the ability to run concurrent productions across different formats.</p>
+                    <div class="event-tags">
+                        <span class="event-tag">Domestic Lineup</span>
+                    </div>
+                    <div class="event-note">Cited in the Japanese Wikipedia article on witch house alongside CHERN.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="wrap">
+            <div class="sec-label r">Skills</div>
+            <div class="skills-grid r">
+                <div class="skill-col">
+                    <div class="skill-col-title">Production &amp; Audio</div>
+                    <ul>
+                        <li>Music production (FL Studio, Reaper)</li>
+                        <li>Mixing &amp; mastering</li>
+                        <li>Sound design &amp; synthesis</li>
+                        <li>Live PA performance</li>
+                        <li>Resolume Arena (live visuals)</li>
+                        <li>TouchDesigner</li>
+                        <li>Audio restoration</li>
+                    </ul>
+                </div>
+                <div class="skill-col">
+                    <div class="skill-col-title">Events &amp; Operations</div>
+                    <ul>
+                        <li>End-to-end event production</li>
+                        <li>Venue sourcing &amp; contracting</li>
+                        <li>Artist negotiations &amp; riders</li>
+                        <li>Ticketing platform management</li>
+                        <li>Budget planning &amp; reconciliation</li>
+                        <li>Vendor &amp; team coordination</li>
+                        <li>Tour routing &amp; logistics</li>
+                    </ul>
+                </div>
+                <div class="skill-col">
+                    <div class="skill-col-title">Industry &amp; Marketing</div>
+                    <ul>
+                        <li>Rights administration</li>
+                        <li>Digital distribution strategy</li>
+                        <li>Sync licensing</li>
+                        <li>Meta Ads &amp; TikTok Ads</li>
+                        <li>GA4, Chartmetric, Spotify for Artists</li>
+                        <li>Press &amp; media relations</li>
+                        <li>SEO / GEO, CRM pipeline</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="credentials">
+        <div class="wrap">
+            <div class="sec-label r">Industry Credentials</div>
+            <div class="creds-grid r">
+                <div class="cred">
+                    <div class="cred-l">Membership</div>
+                    <div class="cred-v">The Ivors Academy — ID 60228D</div>
+                </div>
+                <div class="cred">
+                    <div class="cred-l">Library of Congress</div>
+                    <div class="cred-v">LCCN no2026031735</div>
+                </div>
+                <div class="cred">
+                    <div class="cred-l">Publishing (CMO)</div>
+                    <div class="cred-v">Soundreef — IPI 01219097059</div>
+                </div>
+                <div class="cred">
+                    <div class="cred-l">Neighbouring Rights</div>
+                    <div class="cred-v">NRG Agency — 16 EU territories + Brazil</div>
+                </div>
+                <div class="cred">
+                    <div class="cred-l">Booking</div>
+                    <div class="cred-v">ElektroSpank Agency (Apr 2026)</div>
+                </div>
+                <div class="cred">
+                    <div class="cred-l">Global Identifiers</div>
+                    <div class="cred-v">ISNI · VIAF · Wikidata · MusicBrainz</div>
+                </div>
+            </div>
+
+            <div class="sec-label r" style="margin-top:48px">Certifications</div>
+            <div class="certs-list r">
+                <div class="cert-item">
+                    <div>
+                        <div class="cert-name">Audio Mixing Master Class</div>
+                        <div class="cert-issuer">LinkedIn Learning</div>
+                    </div>
+                    <div class="cert-date">Apr 2026</div>
+                    <a href="https://www.linkedin.com/learning/certificates/efbeadd61121d2d16fb7cfa2359d8ab35e8ffb09ad2ad990b8edbd164f5330e6"
+                        target="_blank" rel="noopener" class="cert-link">View ↗</a>
+                </div>
+                <div class="cert-item">
+                    <div>
+                        <div class="cert-name">Event Planning Foundations</div>
+                        <div class="cert-issuer">Project Management Institute (PMI)</div>
+                    </div>
+                    <div class="cert-date">Apr 2026</div>
+                    <a href="https://www.linkedin.com/learning/certificates/fd8f7677594ef14b3eca7ba02406ee2fa237a1e3dea541a795287b6a7310c3e0"
+                        target="_blank" rel="noopener" class="cert-link">View ↗</a>
+                </div>
+                <div class="cert-item">
+                    <div>
+                        <div class="cert-name">Music Law: Recording, Management, Rights &amp; Performance Contracts
+                        </div>
+                        <div class="cert-issuer">LinkedIn Learning</div>
+                    </div>
+                    <div class="cert-date">Apr 2026</div>
+                    <a href="https://www.linkedin.com/learning/certificates/95b46ed3b5843c92b5b85392b1b1da5e982eb9da19f9c210c0c6ea77a8b7303a"
+                        target="_blank" rel="noopener" class="cert-link">View ↗</a>
+                </div>
+                <div class="cert-item">
+                    <div>
+                        <div class="cert-name">Synthesis and Sound Design</div>
+                        <div class="cert-issuer">Udemy</div>
+                    </div>
+                    <div class="cert-date">Jun 2023</div>
+                    <a href="https://www.udemy.com/certificate/UC-8211d400-149c-45c6-b9d3-3dc2248cbf31/" target="_blank"
+                        rel="noopener" class="cert-link">View ↗</a>
+                </div>
+                <div class="cert-item">
+                    <div>
+                        <div class="cert-name">Sound Engineering</div>
+                        <div class="cert-issuer">Farwater Records</div>
+                    </div>
+                    <div class="cert-date">Dec 2023</div>
+                    <a href="https://www.linkedin.com/in/borukyaroslav/overlay/Certifications/287030890/treasury/?profileId=ACoAAGcqnzABEYE5m2XrFKLX_qNhyV9e0ItaUIY"
+                        target="_blank" rel="noopener" class="cert-link">View ↗</a>
+                </div>
+            </div>
+
+            <div class="sec-label r" style="margin-top:48px">Languages</div>
+            <div class="lang-grid r">
+                <div class="lang-item">
+                    <div class="lang-name">Ukrainian</div>
+                    <div class="lang-level">Native</div>
+                </div>
+                <div class="lang-item">
+                    <div class="lang-name">Russian</div>
+                    <div class="lang-level">Native</div>
+                </div>
+                <div class="lang-item">
+                    <div class="lang-name">English</div>
+                    <div class="lang-level">Professional working proficiency · CEFR B2</div>
+                    <div class="lang-cert">Duolingo English Test · Score 105 · Apr 2026 · Certificate on request</div>
+                </div>
+                <div class="lang-item">
+                    <div class="lang-name">Japanese</div>
+                    <div class="lang-level">Limited working proficiency · JLPT N5</div>
+                    <div class="lang-cert">JLPT · Score 89 · Jul 2023 · Certificate on request</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="wrap">
+            <div class="sec-label r">Contact</div>
+            <div class="contact-grid">
+                <div class="r">
+                    <div class="contact-intro">Open to remote B2B contracts in EMEA.</div>
+                    <p class="contact-note">Available for engagements in music production, audio engineering, event
+                        management, and industry operations. Based in Europe. CV available on request — write with
+                        subject line "CV Request".</p>
+                    <div class="contact-sep">MAN1K project inquiries — bookings, press, sync licensing — <a
+                            href="https://man1k.xyz/contact">man1k.xyz/contact</a>.</div>
+                    <a href="mailto:yaroslavboruk22@gmail.com" class="btn btn-solid mag">yaroslavboruk22@gmail.com</a>
+                </div>
+                <div class="contact-rows r">
+                    <a href="mailto:yaroslavboruk22@gmail.com" class="contact-row">
+                        <span class="cr-label">Email (recruiters &amp; freelance)</span>
+                        <span class="cr-val">yaroslavboruk22@gmail.com</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/borukyaroslav" target="_blank" rel="noopener me"
+                        class="contact-row">
+                        <span class="cr-label">LinkedIn</span>
+                        <span class="cr-val">linkedin.com/in/borukyaroslav</span>
+                    </a>
+                    <a href="https://soundbetter.com/profiles/583629-yaroslav-boruk" target="_blank" rel="noopener"
+                        class="contact-row">
+                        <span class="cr-label">SoundBetter</span>
+                        <span class="cr-val">soundbetter.com · Yaroslav Boruk</span>
+                    </a>
+                    <a href="https://man1k.xyz/services" target="_blank" rel="noopener" class="contact-row">
+                        <span class="cr-label">Freelance pricing</span>
+                        <span class="cr-val">man1k.xyz/services</span>
+                    </a>
+                    <div class="contact-row" style="cursor:default">
+                        <span class="cr-label">Location</span>
+                        <span class="cr-val">Europe · Remote · GMT+1</span>
+                    </div>
+                    <div class="contact-row" style="cursor:default">
+                        <span class="cr-label">Availability</span>
+                        <span class="cr-val">Open to contracts · Full-time remote</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrap">
+            <div class="footer-l">© 2026 Yaroslav Boruk</div>
+            <div class="footer-r">ISNI 0000 0005 1101 6566</div>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            const isMobile = window.innerWidth <= 768;
+
+            const lenis = new Lenis({ lerp: .08, smoothWheel: true });
+            function raf(t) { lenis.raf(t); requestAnimationFrame(raf) }
+            requestAnimationFrame(raf);
+
+            const nav = document.getElementById('nav');
+            const navName = document.getElementById('nav-name');
+            const navLinks = document.getElementById('nav-links');
+
+            if (!isMobile) {
+                let mx = 0, my = 0, cx = window.innerWidth / 2, cy = window.innerHeight / 2;
+                const cur = document.getElementById('cur');
+                const trail = document.getElementById('cur-trail');
+                document.addEventListener('mousemove', e => {
+                    mx = e.clientX; my = e.clientY;
+                    cur.style.left = mx + 'px'; cur.style.top = my + 'px';
+                    document.body.classList.add('cursor-ready');
+                }, { passive: true });
+                (function animTrail() {
+                    cx += (mx - cx) * .12; cy += (my - cy) * .12;
+                    trail.style.left = cx + 'px'; trail.style.top = cy + 'px';
+                    requestAnimationFrame(animTrail);
+                })();
+                document.querySelectorAll('a,button,.btn,.mag,.proj-link,.cert-link,.stat,.skill-col li,.contact-row,.cred,.lang-item,.event-card').forEach(el => {
+                    el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
+                    el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
+                });
+                document.querySelectorAll('.mag').forEach(el => {
+                    el.addEventListener('mousemove', e => {
+                        const r = el.getBoundingClientRect();
+                        el.style.transform = `translate(${(e.clientX - (r.left + r.width / 2)) * .18}px,${(e.clientY - (r.top + r.height / 2)) * .18}px)`;
+                    });
+                    el.addEventListener('mouseleave', () => { el.style.transform = ''; });
+                });
+            }
+
+            function revealHero() {
+                const h1 = document.getElementById('hero-h1');
+                const sub = document.getElementById('hero-sub');
+                const status = document.getElementById('hero-status');
+                const summary = document.getElementById('hero-summary');
+                const actions = document.getElementById('hero-actions');
+                setTimeout(() => { status.style.transition = 'opacity .5s'; status.style.opacity = '1'; }, 100);
+                setTimeout(() => { h1.style.transition = 'transform .75s cubic-bezier(.16,1,.3,1)'; h1.style.transform = 'translateY(0)'; }, 200);
+                setTimeout(() => { sub.style.transition = 'transform .75s cubic-bezier(.16,1,.3,1)'; sub.style.transform = 'translateY(0)'; }, 360);
+                setTimeout(() => { summary.style.transition = 'opacity .6s'; summary.style.opacity = '1'; }, 580);
+                setTimeout(() => { actions.style.transition = 'opacity .6s'; actions.style.opacity = '1'; }, 740);
+                setTimeout(() => {
+                    navName.style.transition = 'opacity .5s'; navName.style.opacity = '1';
+                    [...navLinks.querySelectorAll('a')].forEach((a, i) => {
+                        setTimeout(() => { a.style.transition = 'opacity .4s'; a.style.opacity = '1'; }, i * 70);
+                    });
+                }, 500);
+            }
+
+            revealHero();
+
+            window.addEventListener('scroll', () => nav.classList.toggle('stuck', window.scrollY > 20), { passive: true });
+
+            const sections = document.querySelectorAll('section[id]');
+            const navAs = document.querySelectorAll('.nav-links a');
+            const secObs = new IntersectionObserver(entries => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) {
+                        navAs.forEach(a => a.classList.remove('active'));
+                        const active = document.querySelector(`.nav-links a[href="#${e.target.id}"]`);
+                        if (active) active.classList.add('active');
+                    }
+                });
+            }, { threshold: .4 });
+            sections.forEach(s => secObs.observe(s));
+
+            const CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789·–';
+            function scramble(el, txt, dur) {
+                let f = 0, total = Math.floor(dur / 30);
+                const id = setInterval(() => {
+                    f++; const p = f / total;
+                    el.textContent = txt.split('').map((c, i) => {
+                        if (c === ' ') return ' ';
+                        if (i / txt.length < p) return c;
+                        return CHARS[Math.floor(Math.random() * CHARS.length)];
+                    }).join('');
+                    if (f >= total) { clearInterval(id); el.textContent = txt; }
+                }, 30);
+            }
+
+            const scObs = new IntersectionObserver(entries => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) { scramble(e.target, e.target.dataset.final, 600); scObs.unobserve(e.target); }
+                });
+            }, { threshold: .5 });
+
+            document.querySelectorAll('.sec-label').forEach(el => {
+                el.dataset.final = el.textContent; el.classList.add('r'); scObs.observe(el);
+            });
+
+            const countObs = new IntersectionObserver(entries => {
+                entries.forEach(e => {
+                    if (!e.isIntersecting) return;
+                    const el = e.target, val = parseInt(el.dataset.val);
+                    let c = 0; const step = Math.ceil(val / 40);
+                    const id = setInterval(() => {
+                        c = Math.min(c + step, val);
+                        el.textContent = c + (val >= 10 ? '+' : '');
+                        if (c >= val) clearInterval(id);
+                    }, 30);
+                    countObs.unobserve(el);
+                });
+            }, { threshold: .5 });
+            document.querySelectorAll('.stat-n[data-val]').forEach(el => countObs.observe(el));
+
+            const revObs = new IntersectionObserver(entries => {
+                entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); revObs.unobserve(e.target); } });
+            }, { threshold: .07, rootMargin: '0px 0px -28px 0px' });
+            document.querySelectorAll('.r').forEach(el => revObs.observe(el));
+
+            ['.stats', '.skills-grid', '.creds-grid', '.lang-grid', '.certs-list', '.event-cards'].forEach(sel => {
+                const c = document.querySelector(sel);
+                if (!c) return;
+                [...c.children].forEach((ch, i) => {
+                    ch.classList.add('r'); ch.style.transitionDelay = `${i * .07}s`; revObs.observe(ch);
+                });
+            });
+        })();
+    </script>
+    <!-- 100% privacy-first analytics -->
+    <script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif?collect-dnt=true" alt=""
+            referrerpolicy="no-referrer-when-downgrade" /></noscript>
+</body>
+
+</html>
