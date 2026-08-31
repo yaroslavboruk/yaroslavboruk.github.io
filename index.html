@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="noindex, nofollow" />
     <title>Yaroslav Boruk — Music Industry Professional</title>
     <meta name="description"
         content="Yaroslav Boruk — Independent music producer, sound engineer, and event manager. 3+ years of international operations. Available for remote contracts and freelance." />
@@ -845,6 +845,41 @@
             color: var(--white)
         }
 
+        .cert-item.featured {
+            border: 1px solid var(--border2);
+            padding: 16px 14px;
+            margin-bottom: 16px
+        }
+
+        .cert-item.featured:first-child {
+            border-top: 1px solid var(--border2)
+        }
+
+        .cert-item.featured:hover {
+            padding-left: 14px
+        }
+
+        .cert-badge {
+            font-size: 9px;
+            font-weight: 700;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            color: var(--text2);
+            margin-left: 8px;
+            vertical-align: middle
+        }
+
+        .cert-item.featured:hover .cert-badge {
+            color: var(--white)
+        }
+
+        .cert-note {
+            font-size: 11px;
+            color: var(--text2);
+            margin-top: 4px;
+            max-width: 480px
+        }
+
         .creds-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -1282,15 +1317,12 @@
                         independent operation conceived and built from scratch. The project spans music production,
                         release strategy, distribution, live booking, brand architecture, and digital infrastructure.
                     </p>
-                    <div class="project-note">Bookings, press &amp; licensing — <a
-                            href="https://press.man1k.xyz/onesheet.pdf" target="_blank" rel="noopener">One Sheet
-                            (PDF)</a></div>
                 </div>
                 <div class="project-links">
                     <a href="https://man1k.xyz" target="_blank" rel="noopener me" class="proj-link">man1k.xyz
                         <span>↗</span></a>
-                    <a href="https://press.man1k.xyz/onesheet.pdf" target="_blank" rel="noopener" class="proj-link">EPK
-                        / Press
+                    <a href="https://press.man1k.xyz/onesheet.pdf" target="_blank" rel="noopener"
+                        class="proj-link">Overview
                         <span>↗</span></a>
                 </div>
             </div>
@@ -1315,7 +1347,7 @@
             <div class="sec-label r">Selected Events</div>
             <div class="event-cards r">
                 <div class="event-card">
-                    <div class="event-kicker">Tokyo · Jul 25, 2025</div>
+                    <div class="event-kicker">Jul 25, 2025</div>
                     <div class="event-title">CHERN</div>
                     <div class="event-venue">HVEN · Cap 300</div>
                     <p class="event-desc">High-production underground electronic event at one of Tokyo's most respected
@@ -1332,7 +1364,7 @@
                         event.</div>
                 </div>
                 <div class="event-card">
-                    <div class="event-kicker">Osaka · Aug 1, 2025</div>
+                    <div class="event-kicker">Aug 1, 2025</div>
                     <div class="event-title">TETRØ TERRØR</div>
                     <div class="event-venue">Socore Factory · Cap 250</div>
                     <p class="event-desc">Underground electronic event focused on the Japanese domestic scene — a
@@ -1342,6 +1374,7 @@
                         Demonstrates the ability to run concurrent productions across different formats.</p>
                     <div class="event-tags">
                         <span class="event-tag">Domestic Lineup</span>
+                        <span class="event-tag">Osaka</span>
                     </div>
                     <div class="event-note">Cited in the Japanese Wikipedia article on witch house alongside CHERN.
                     </div>
@@ -1426,6 +1459,17 @@
 
             <div class="sec-label r" style="margin-top:48px">Certifications</div>
             <div class="certs-list r">
+                <div class="cert-item featured">
+                    <div>
+                        <div class="cert-name">Certified Human Creator<span class="cert-badge">· AI-Free</span></div>
+                        <div class="cert-issuer">Human Intelligence™ Institute</div>
+                        <div class="cert-note">Certifies that all music released under this name is written, produced,
+                            and performed without the use of AI-generated composition, lyrics, or performance.</div>
+                    </div>
+                    <div class="cert-date">May 2026</div>
+                    <a href="https://archive.org/details/yaroslavboruk-humanright" target="_blank" rel="noopener"
+                        class="cert-link">View ↗</a>
+                </div>
                 <div class="cert-item">
                     <div>
                         <div class="cert-name">Audio Mixing Master Class</div>
@@ -1469,7 +1513,7 @@
                         <div class="cert-issuer">Farwater Records</div>
                     </div>
                     <div class="cert-date">Dec 2023</div>
-                    <a href="https://www.linkedin.com/in/borukyaroslav/overlay/Certifications/287030890/treasury/?profileId=ACoAAGcqnzABEYE5m2XrFKLX_qNhyV9e0ItaUIY"
+                    <a href="https://uc2f9825b157541f79a57ae31bae.previews.dropboxusercontent.com/p/thumb/ADE51NzcKyavPbA5Ng7e-LALyKtHpXFVv3YRMJrLaXXLfxmcXeZLQCQC4DLDRZ1d_P4y0w7JKR7WcFi92jQjrsFoSuXQr4-Fap-vB49zb8gRFFknSmr1pfJSrODYJArHFyo3NETTU7mFiy9wEdTTpXtE_KobpdjFOLJZ3tUBORQ-RS3DNWE1cHh4Sx-Hxy_dBvAjq2OUZ1S2OtpVYPtRNeClVyjng3jCLCm_j7_ID5k0dKVZgfUKfx17VYI1XT7hFrLBK3aYvQKUIv0vJu8hWm_eDCO3dm7fnFWchvgy2OTGUStd8rGH3GrS66hMf3MMsdMoop-yBvCj2NK4zCvDZ5J9W9uXCdjeISJBFNQ8WbgPqlwgSKBgEgbiOAL7GjrzswAK1yopOkXpMuP6rW75dLZO/p.png?is_prewarmed=true"
                         target="_blank" rel="noopener" class="cert-link">View ↗</a>
                 </div>
             </div>
